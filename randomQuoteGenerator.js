@@ -1,11 +1,20 @@
 $(document).ready(function() {
-    $('#quote-box').on('click'.function() {
+    $('#button').on('click'.function() {
         $ajax({
-            url: "/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
-            dataType: 'json',
-            success: function() {
+            url: "http://api.forismatic.com/api/1.0/",
+            jsonp: "jsonp",
+            dataType: "jsonp",
+            data: {
+                method: "getQuote",
+                lang: "en",
+                format: "jsonp"
+            },
+            success: function(res) {
+                newQuote = res.quoteText;
+                newAuthor = res.quoteAuthor;
+                
             }
-        }
+        })
     })
     
 })
