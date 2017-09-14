@@ -1,6 +1,13 @@
 $(document).ready(function() {
-    $('#button').on('click'.function() {
-        $ajax({
+    loadData();
+
+    function loadData() {
+
+        var newQuote;
+        var newAuthor;
+
+        //Make an AJAX Request
+        $.ajax({
             url: "http://api.forismatic.com/api/1.0/",
             jsonp: "jsonp",
             dataType: "jsonp",
@@ -12,9 +19,19 @@ $(document).ready(function() {
             success: function(res) {
                 newQuote = res.quoteText;
                 newAuthor = res.quoteAuthor;
-                $("#quote-box").html(newQuote)
+                $("#quote-box").html(newQuote);
+                if(newAuthor) {
+                    $("#author").html("- " + newAuthor)
+                } else {
+                    $("#author").html("- " + "Anonymous")
+                }     
             }
-        })
-    })  
-    
+        });
+    }
+
+    $("#quote-btn").click(loadData);
+
+       
+
+
 })
