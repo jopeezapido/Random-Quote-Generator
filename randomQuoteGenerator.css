@@ -1,0 +1,34 @@
+body {
+    background: lightblue;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    line-height: 48px;
+    text-transform: none;
+    color: #2A2A2A;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+    font-style: normal;
+
+    margin: 5px;
+}
+
+#att {
+    padding: 15px;
+}
