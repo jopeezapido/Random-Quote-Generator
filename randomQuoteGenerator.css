@@ -2,6 +2,14 @@ body {
     background: lightblue;
 }
 
+.container {
+    padding-top: 80px;
+}
+
+h2 {
+    color: white;
+}
+
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 50px;
@@ -11,24 +19,35 @@ h1 {
     line-height: 48px;
     text-transform: none;
     color: #2A2A2A;
+    padding-left: 100px;
 }
 
-.button {
-    background-color: white;
+#boxes {
+    padding: 80px;
+}
+
+
+button {
+    background-color: #801638;
     border: none;
     border-radius: 5px;
-    color: black;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block;
     font-size: 16px;
-    font-family: Arial;
     font-style: normal;
-
     margin: 5px;
 }
 
-#att {
-    padding: 15px;
+#btns {  
+    padding-left: 200px;
 }
+
+#att {
+    padding-left: 480px;
+    padding-top: 50px;
+}
+

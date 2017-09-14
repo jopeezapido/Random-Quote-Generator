@@ -24,20 +24,36 @@
     </head>
 
 <body>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-xs-2'></div>
+            <div class='col-xs-8'>
+                <span id='title'><h1>"Random Quote Generator"</h1></span>
+                <span id='sub-text'><h2>...a hipster's inspiration.</h2></span>
+            </div>
+            <div class='col-xs-2'></div>
+        </div>
 
-    <h1>Random Quote Generator</h1>
+        <div id='quote-box' class='row'>
+            <div class='col-xs-1'></div>
+            <div id='boxes' class='col-xs-10'>
+                <span id='quote-box'></span>
+                <span id="author"></span>
+            <div class='col-xs-1'></div>
+            </div> 
+        </div>
 
-    <div id='quote-box'></div>
-
-    <div id="author"></div>
-
-    <div>
-        <button id= "quote-btn" class = "button">Generate Quote!</button>
-
-        <button id= "twt-btn" class="button">Tweet This!</button>
+        <div class='row'>
+            <div class='col-xs-2'></div>
+            <div id='btns' class='col-xs-8'>
+                <button id= "quote-btn" class = "button">Generate Quote!</button>
+                <button id= "twt-btn" class="button">Tweet This!</button>
+            </div>
+        </div>
+            
+            <div id=att><strong>API by: </strong><a>forismatic-api.com</a></div>
+        
     </div>
-
-    <div id=att><strong>API by: </strong><a>theysaidso.com</a></div>
 
     <script src="randomQuoteGenerator.js"></script>
 

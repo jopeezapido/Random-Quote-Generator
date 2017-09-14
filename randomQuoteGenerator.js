@@ -12,9 +12,9 @@ $(document).ready(function() {
             success: function(res) {
                 newQuote = res.quoteText;
                 newAuthor = res.quoteAuthor;
-                
+                $("#quote-box").html(newQuote)
             }
         })
-    })
+    })  
     
 })
