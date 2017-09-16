@@ -1,10 +1,11 @@
 $(document).ready(function() {
     loadData();
+    
+
+    var newQuote;
+    var newAuthor;
 
     function loadData() {
-
-        var newQuote;
-        var newAuthor;
 
         //Make an AJAX Request
         $.ajax({
@@ -19,19 +20,21 @@ $(document).ready(function() {
             success: function(res) {
                 newQuote = res.quoteText;
                 newAuthor = res.quoteAuthor;
-                $("#quote-box").html(newQuote);
+                $("#quote-box").html('"' + newQuote + '"');
                 if(newAuthor) {
                     $("#author").html("- " + newAuthor)
                 } else {
-                    $("#author").html("- " + "Anonymous")
-                }     
+                    $("#author").html("- " + newAuthor = "Anonymous")
+                }
             }
         });
-    }
+    };
 
-    $("#quote-btn").click(loadData);
+    
+    $("#quote-btn").on("click", function(){ loadData()
+    });
 
-       
-
-
+    $("#twt-btn").on("click", function() {
+        var myWindow = window.open("https://twitter.com/intent/tweet?text=" + newQuote + " --" + newAuthor, "width=400,height=300")
+    });
 })

@@ -61,8 +61,13 @@ button {
     padding-top: 50px;
 }
 
+.twitter-share-button {
+    
+}
+
 #att {
     padding-left: 470px;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
