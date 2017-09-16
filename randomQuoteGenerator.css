@@ -42,10 +42,11 @@ h1 {
 }
 
 button {
-    background-color: #801638;
-    border: none;
-    border-radius: 5px;
-    color: white;
+    background: transparent;
+    border: solid;
+    border-color: #801638;
+    border-radius: 6px;
+    color: #801638;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -71,3 +72,18 @@ button {
     padding-bottom: 30px;
 }
 
+/*Button and Links Pseudos*/
+
+a:link{
+    color: black;
+    font-style: none;
+}
+
+.button:hover {
+    background-color: #801638;
+    color: white;
+}
+
+.button:active {
+    font-size: 12px;
+}

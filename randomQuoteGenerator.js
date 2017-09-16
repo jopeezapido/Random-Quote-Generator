@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     var newQuote;
     var newAuthor;
+    
 
     function loadData() {
 
@@ -24,7 +25,7 @@ $(document).ready(function() {
                 if(newAuthor) {
                     $("#author").html("- " + newAuthor)
                 } else {
-                    $("#author").html("- " + newAuthor = "Anonymous")
+                    $("#author").html("- " + "Anonymous")
                 }
             }
         });
@@ -35,6 +36,8 @@ $(document).ready(function() {
     });
 
     $("#twt-btn").on("click", function() {
-        var myWindow = window.open("https://twitter.com/intent/tweet?text=" + newQuote + " --" + newAuthor, "width=400,height=300")
+        var myWindow = window.open("https://twitter.com/intent/tweet?text=" + newQuote + "--" + newAuthor, "myWindow" )
     });
+
 })
+

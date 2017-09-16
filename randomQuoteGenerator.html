@@ -20,6 +20,9 @@
 
         <!-- css -->
         <link rel='stylesheet' type= 'text/css' href="randomQuoteGenerator.css">
+
+        <!--font-awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     </head>
 
@@ -48,11 +51,11 @@
             <div class='col-xs-2'></div>
             <div id='btns' class='col-xs-8'>
                 <button id= "quote-btn" class = "button">Generate quote.</button>
-                <button id= "twt-btn" class="button">Tweet this.</button>
+                <button id= "twt-btn" class="button"><i class="fa fa-twitter"></i> Tweet this.</button>
             </div>
         </div>
             
-        <div id=att><strong>API by: </strong><a>forismatic-api.com</a></div>
+        <div id=att><strong>API by: </strong><a>https://forismatic.com/en/api/</a></div>
         
     </div>
 
@@ -62,6 +65,22 @@
 
     <!--Script for Twitter API-->
 
+    <script>window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+              t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          
+            t._e = [];
+            t.ready = function(f) {
+              t._e.push(f);
+            };
+          
+            return t;
+          }(document, "script", "twitter-wjs"));</script>
     
 
 </body>
