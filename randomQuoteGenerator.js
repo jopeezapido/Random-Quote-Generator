@@ -4,7 +4,6 @@ $(document).ready(function() {
 
     var newQuote;
     var newAuthor;
-    var url;
     
 
     function loadData() {
