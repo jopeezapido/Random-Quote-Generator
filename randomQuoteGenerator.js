@@ -8,15 +8,19 @@ $(document).ready(function() {
 
     function loadData() {
 
+        //prepend cors data to solve cross browser issues
+
+        var url = "https://cors-anywhere.herokuapp.com/http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en";
+
         //Make an AJAX Request
         $.ajax({
             url: "http://api.forismatic.com/api/1.0/",
-            jsonp: "jsonp",
-            dataType: "jsonp",
+            json: "json",
+            dataType: "json",
             data: {
                 method: "getQuote",
                 lang: "en",
-                format: "jsonp"
+                format: "json"
             },
             success: function(res) {
                 newQuote = res.quoteText;
