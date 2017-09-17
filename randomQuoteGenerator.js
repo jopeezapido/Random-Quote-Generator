@@ -14,7 +14,7 @@ $(document).ready(function() {
 
         //Make an AJAX Request
         $.ajax({
-            url: "http://api.forismatic.com/api/1.0/",
+            url: url,
             json: "json",
             dataType: "json",
             data: {
