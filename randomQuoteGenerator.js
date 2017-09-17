@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     var newQuote;
     var newAuthor;
+    var url;
     
 
     function loadData() {
@@ -15,13 +16,13 @@ $(document).ready(function() {
         //Make an AJAX Request - Old version (did not work because of redundant json and url format indications)
 
         /*$.ajax({
-            url: url,
-            json: "json",
-            dataType: "json",
+            url: "http://api.forismatic.com/api/1.0/",
+            jsonp: "jsonp",
+            dataType: "jsonp",
             data: {
                 method: "getQuote",
                 lang: "en",
-                format: "json"
+                format: "jsonp"
             },
             success: function(res) {
                 newQuote = res.quoteText;
